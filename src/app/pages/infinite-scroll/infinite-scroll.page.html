@@ -1,0 +1,15 @@
+<app-header-like title="infinite Scroll"></app-header-like>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i= index;" >
+      <ion-label>{{i + 1}} Awesome Label</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll threshold="25%" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="dots" loadingText="Cargando...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

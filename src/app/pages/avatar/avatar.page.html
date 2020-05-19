@@ -1,0 +1,20 @@
+<app-header-avatar title="Avatar Page" img="/assets/startDead.jpg"></app-header-avatar>
+
+<ion-content>
+
+  <ion-chip color="dark" *ngFor="let i of [1,1,1,1,1]" >
+    <ion-avatar>
+      <img src="/assets/startDead.jpg">
+    </ion-avatar>
+    <ion-label>Dead Zombie</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item *ngFor="let i of [1,1,1,1,1]" >
+      <ion-avatar slot="start">
+        <img src="/assets/startDead.jpg">
+      </ion-avatar>
+      <ion-label>Dead Zombie</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

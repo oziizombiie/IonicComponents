@@ -1,0 +1,40 @@
+<app-header-like title="Input Page"></app-header-like>
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>{{nombre || "Guest" }}</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Formulario template: Valido {{ formulario.valid }}</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email"
+        name="email"
+        [(ngModel)]="usuario.email"
+        required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"
+        name="pwd"
+        [(ngModel)] ="usuario.pwd"
+        required></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button type="submit" [disabled]=formulario.invalid>
+      <ion-icon slot="start" name="person-add-outline"></ion-icon>
+      Inscribir
+    </ion-button>
+
+  </form>
+</ion-content>

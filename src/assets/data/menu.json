@@ -1,0 +1,67 @@
+[
+    {
+      "icon": "beer-outline",
+      "nombre": "Action Sheet",
+      "redirectTo": "/action-sheet"
+    },
+    {
+      "icon": "pizza-outline",
+      "nombre": "Alert",
+      "redirectTo": "/alert"
+    },
+    {
+      "icon": "logo-tux",
+      "nombre": "Avatar",
+      "redirectTo": "/avatar"
+    },
+    {
+      "icon": "train-outline",
+      "nombre": "Botones",
+      "redirectTo": "/botones"
+    },
+    {
+      "icon": "layers-outline",
+      "nombre": "Tarjetas",
+      "redirectTo": "/card"
+    },
+    {
+      "icon": "star-half-outline",
+      "nombre": "Checkbox",
+      "redirectTo": "/check"
+    },
+    {
+      "icon": "planet-outline",
+      "nombre": "Boton flotante",
+      "redirectTo": "/fab"
+    },
+    {
+      "icon": "grid-outline",
+      "nombre": "Grid",
+      "redirectTo": "/grid"
+    },
+    {
+      "icon": "pulse-outline",
+      "nombre": "Infinite Scroll",
+      "redirectTo": "/infinite-scroll"
+    },
+    {
+      "icon": "hammer-outline",
+      "nombre": "Inpust - Forms",
+      "redirectTo": "/input"
+    },
+    {
+      "icon": "options-outline",
+      "nombre": "Listas sliding ",
+      "redirectTo": "/list"
+    },
+    {
+      "icon": "alarm-outline",
+      "nombre": "Listas ordenadas ",
+      "redirectTo": "/list-reorder"
+    },
+    {
+      "icon": "refresh-circle",
+      "nombre": "Loading ",
+      "redirectTo": "/loading"
+    }
+  ]

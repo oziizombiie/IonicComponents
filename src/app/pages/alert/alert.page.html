@@ -1,0 +1,7 @@
+<app-header [title]="titulo || 'Alert Page'"></app-header>
+
+<ion-content>
+    <ion-button expand="full" (click)="presentAlert()" color="primary">Mostrar Alerta</ion-button>
+    <ion-text>{{canceledTime}}</ion-text>
+    <ion-button expand="full" (click)="presentFormAlert()" color="primary">Mostrar Alerta</ion-button>
+</ion-content>

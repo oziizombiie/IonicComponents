@@ -1,0 +1,17 @@
+<ion-header class="ion-no-border" translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" detail></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="terminal-outline"></ion-icon>
+      </ion-button>
+      <ion-button color="danger" (click)="addFavorite()">
+        <ion-icon *ngIf="favoriteStatus" name="heart"></ion-icon>
+        <ion-icon *ngIf="!favoriteStatus" name="heart-outline" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
